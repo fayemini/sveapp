@@ -16,6 +16,9 @@ jobs:
           persist-credentials: false
           # submodules: true  # TODO remove this if not using submodules in Hexo
 
+      - name: Setup pnpm 👌
+        uses: pnpm/action-setup@v4
+
       - name: Install 🔧
         # run: yarn install
         run: pnpm install
