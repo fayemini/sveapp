@@ -17,12 +17,15 @@ jobs:
           # submodules: true  # TODO remove this if not using submodules in Hexo
 
       - name: Install 🔧
-        run: yarn install
+        # run: yarn install
+        run: pnpm install
 
       - name: Build 🏗️
         run: |
-          yarn clean
-          yarn build
+          # yarn clean
+          # yarn build
+          pnpm clean
+          pnpm build
       - name: Deploy to GH Pages 🚀
         uses: peaceiris/actions-gh-pages@v3
         with:
