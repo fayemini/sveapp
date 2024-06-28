@@ -27,7 +27,7 @@ jobs:
         run: |
           # yarn clean
           # yarn build
-          pnpm clean
+          # pnpm clean
           pnpm build
       - name: Deploy to GH Pages 🚀
         uses: peaceiris/actions-gh-pages@v3
